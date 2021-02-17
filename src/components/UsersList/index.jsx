@@ -6,7 +6,12 @@ const UsersList = ({ list = [] }) => (
   <Grid container spacing={3} className="mt-4">
     {list.map((item, index) => (
       <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
-        <UserCard />
+        <UserCard
+          fullName={`${item?.name?.first} ${item?.name?.last}`}
+          userName={item?.login?.username}
+          image={item?.picture?.thumbnail}
+          email={item?.email}
+        />
       </Grid>
     ))}
   </Grid>

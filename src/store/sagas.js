@@ -1,7 +1,7 @@
 import { takeEvery } from "redux-saga/effects";
-import * as types from "./types";
-import { fetchSaga } from "./sagas/SagaExample";
+import * as usersTypes from "./users/types";
+import { fetchUsersSaga } from "./users/sagas";
 
 export function* watchAll() {
-  yield takeEvery(types.FETCH_DATA_REQUEST, fetchSaga);
+  yield takeEvery(usersTypes.FETCH_USERS_REQUEST, fetchUsersSaga);
 }
