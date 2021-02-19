@@ -12,6 +12,7 @@ const UsersList = ({ list = [], showNoResults = false }) => (
             userName={item?.login?.username}
             image={item?.picture?.thumbnail}
             email={item?.email}
+            fullItem={item}
           />
         </Grid>
       ))}
