@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import { Avatar, Card, CardContent } from "@material-ui/core";
+import { Avatar, Card, CardContent, Button } from "@material-ui/core";
 import { getUserDetails } from "../../utils/users";
 import Modal from "../Modal";
 import styles from "./UserCard.module.scss";
+import { MoreHorizOutlined, MoreVertOutlined } from "@material-ui/icons";
 
 const UserCard = ({ image, fullName, userName, email, fullItem }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,9 @@ const UserCard = ({ image, fullName, userName, email, fullItem }) => {
           <h3>{fullName}</h3>
           <p className={styles.smallText}>User name: {userName}</p>
           <p className={styles.smallText}>Email: {email}</p>
+          <Button variant="contained" color="primary" className="mt-4">
+            Show More
+          </Button>
         </CardContent>
       </Card>
       <Modal
