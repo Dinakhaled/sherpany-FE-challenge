@@ -27,7 +27,7 @@ const Modal = ({ header, infos = [], isOpen = false, handleClose }) => {
       <List>
         <Grid container spacing={0} className="p-3">
           {infos.map((info, index) => (
-            <Grid key={index} item lg={3} md={4} sm={6} xs={12}>
+            <Grid key={index} item sm={6} xs={12}>
               <ListItem>
                 <div className={styles.icon}>{info.icon}</div>
                 <ListItemText className={styles.listText} primary={info.text} />
