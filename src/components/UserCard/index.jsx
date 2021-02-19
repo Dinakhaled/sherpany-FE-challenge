@@ -3,7 +3,6 @@ import { Avatar, Card, CardContent, Button } from "@material-ui/core";
 import { getUserDetails } from "../../utils/users";
 import Modal from "../Modal";
 import styles from "./UserCard.module.scss";
-import { MoreHorizOutlined, MoreVertOutlined } from "@material-ui/icons";
 
 const UserCard = ({ image, fullName, userName, email, fullItem }) => {
   const [isOpen, setIsOpen] = useState(false);
