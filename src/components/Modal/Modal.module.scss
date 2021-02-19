@@ -1,0 +1,26 @@
+@import "../../scss/variables";
+
+.header {
+  padding: 26px 26px 0 26px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.listText {
+  margin-left: 10px;
+
+  span {
+    font-size: 1.2rem;
+  }
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: $darkGray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+}
