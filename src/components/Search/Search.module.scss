@@ -1,0 +1,14 @@
+@import '../../scss/variables';
+
+.search {
+  background: $white;
+  height: 40px;
+  width: 250px;
+  border: 0;
+  box-shadow: $primaryShadow;
+
+  &:hover, &:focus {
+    border: 0;
+    outline: 0;
+  }
+}

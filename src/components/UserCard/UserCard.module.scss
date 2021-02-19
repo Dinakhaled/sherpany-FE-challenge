@@ -3,6 +3,8 @@
 .wrapper.card {
   box-shadow: $primaryShadow;
   padding: 20px 16px;
+  height: 100%;
+  
   cursor: pointer;
 
   .image {
