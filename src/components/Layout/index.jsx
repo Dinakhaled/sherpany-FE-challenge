@@ -18,6 +18,7 @@ import {
 import MenuIcon from "@material-ui/icons/Menu";
 import ChevronLeftIcon from "@material-ui/icons/ChevronLeft";
 import { SIDE_MENU } from "./data";
+import Search from "../Search";
 
 const drawerWidth = 180;
 
@@ -107,21 +108,24 @@ const Layout = ({ children }) => {
           [classes.appBarShift]: open,
         })}
       >
-        <Toolbar>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            onClick={handleDrawerOpen}
-            edge="start"
-            className={clsx(classes.menuButton, {
-              [classes.hide]: open,
-            })}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap>
-            Address book app
-          </Typography>
+        <Toolbar className="justify-content-between">
+          <div className="d-flex align-items-center">
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              onClick={handleDrawerOpen}
+              edge="start"
+              className={clsx(classes.menuButton, {
+                [classes.hide]: open,
+              })}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography variant="h6" noWrap>
+              Address book app
+            </Typography>
+          </div>
+          <Search />
         </Toolbar>
       </AppBar>
       <Drawer
